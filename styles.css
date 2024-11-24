@@ -1,0 +1,157 @@
+/* Colores de la paleta */
+:root {
+    --dark: #2D2D29;
+    --blue: #215A6D;
+    --turquoise: #3CA2A2;
+    --light-green: #92C7A3;
+    --pastel-green: #DFECE6;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--pastel-green);
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--blue);
+    color: white;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  
+  header p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .pet-button {
+    background-color: white;
+    border: 2px solid var(--blue);
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .pet-button img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+  
+  .pet-button:hover {
+    background-color: var(--blue);
+    transform: scale(1.1);
+  }
+  
+  #form-section {
+    background-color: var(--light-green);
+    padding: 1rem;
+    margin: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #form-section.hidden {
+    display: none;
+  }
+  
+  form label {
+    display: block;
+    font-size: 0.9rem;
+    margin: 0.5rem 0 0.2rem;
+    color: var(--dark);
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+  }
+  
+  form button {
+    background-color: var(--turquoise);
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: var(--blue);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--dark);
+    color: white;
+    font-size: 0.8rem;
+  }
+  
+  @media (max-width: 412px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .pet-button {
+      width: 120px;
+      height: 120px;
+      font-size: 0.9rem;
+    }
+  
+    .pet-button img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    #form-section {
+      width: 100%;
+      padding: 0.5rem;
+    }
+  
+    form button {
+      font-size: 0.9rem;
+    }
+  }
+  

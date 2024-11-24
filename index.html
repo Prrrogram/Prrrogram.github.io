@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrashHunters - MAR</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Mi Asistente de Reciclaje (MAR)</h1>
+    <br>
+    <p>Selecciona el tipo de PET para encontrar un centro de reciclaje en Cuauhtémoc, CDMX.</p>
+  </header>
+  
+  <br>
+
+  <main>
+    <div class="button-container">
+      <button class="pet-button" data-type="PET tipo 1">
+        <img src="PET1.png" alt="PET tipo 1">
+        <p>PET 1</p>
+      </button>
+      <button class="pet-button" data-type="PET tipo 2">
+        <img src="PET2.png" alt="PET tipo 2">
+        <p>PET 2</p>
+      </button>
+      <button class="pet-button" data-type="PET tipo 3">
+        <img src="PET3.png" alt="PET tipo 3">
+        <p>PET 3</p>
+      </button>
+      <button class="pet-button" data-type="PET tipo 4">
+        <img src="PET4.png" alt="PET tipo 4">
+        <p>PET 4</p>
+      </button>
+      <button class="pet-button" data-type="PET tipo 5">
+        <img src="PET5.png" alt="PET tipo 5">
+        <p>PET 5</p>
+      </button>
+      <button class="pet-button" data-type="PET tipo 6">
+        <img src="PET6.png" alt="PET tipo 6">
+        <p>PET 6</p>
+      </button>
+      <button class="pet-button" data-type="PET tipo 7">
+        <img src="PET7.png" alt="PET tipo 7">
+        <p>PET 7</p>
+      </button>
+
+    <br>
+    <br>
+    </div>
+    
+    <br>
+    <br>
+
+
+    <section id="form-section" class="hidden">
+      <form id="location-form">
+        
+        <label for="city">Ciudad:</label>
+        <input type="text" id="city" value="Ciudad de México" disabled>
+
+        <label for="colony">Colonia:</label>
+        <input type="text" id="colony" value="Cuauhtémoc" disabled>
+
+        <label for="street">Calle:</label>
+        <select id="street" required>
+          <!-- Calles predeterminadas de Cuauhtémoc -->
+        </select>
+
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <br>
+    <br>
+    <p>&copy; 2024 TrashHunters - MAR</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
